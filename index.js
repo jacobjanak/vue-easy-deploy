@@ -28,8 +28,8 @@ buildCmd.on('exit', exitCode => {
       if (err) handleErr(err);
 
       // Rename /dist to /docs because gh-pages can be set to look for /docs
-      const src = path.join(__dirname, 'dist');
-      const dest = path.join(__dirname, 'docs');
+      const src = path.join(process.cwd(), 'dist');
+      const dest = path.join(process.cwd(), 'docs');
       copyDir(src, dest, () => {
 
         // Remove old /dist directory
