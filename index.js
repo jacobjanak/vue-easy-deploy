@@ -7,15 +7,17 @@ fs.readFile('./dist/index.html', 'utf-8', function(err, data) {
   // all the parenthese can be removed except the first group
   // $1 returns the first group
   // probably don't need m for multiline
-  var newValue = data.replace(/(href=")(\/)(.*?)(\/)/gm, $1./);
+  // I can also change the delimeter to @ so that I don't need to escape the backslash
+  // I should combine both regex
+  var newHTML = data.replace(/(href=")(\/)(.*?)(\/)/gm, '$1./'); // change var to const later
+  newHTML = data.replace(/(src=")(\/)(.*?)(\/)/gm, '$1./');
 
-  fs.writeFile('filelistAsync.txt', newValue, 'utf-8', function(err) {
+  fs.writeFile('./dist/index.html', newHTML, 'utf-8', function(err) {
     if (err) throw err;
-    console.log('filelistAsync complete')
   })
 })
 
 // Rename /dist to /docs because gh-pages can be set to look for /docs
-fs.rename('./dist', './docs', function(err) {
-  if (err) throw err;
-})
+// fs.rename('./dist', './docs', function(err) {
+//   if (err) throw err;
+// })
