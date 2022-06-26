@@ -10,7 +10,7 @@ NPM package: [npmjs.com/package/vue-easy-deploy](https://www.npmjs.com/package/v
 5. Go to your GitHub repository &rarr; Settings &rarr; Pages<br /><br />
 6. Set "source" to "main" and set "folder" to "docs"<br /><br />
 
-That's it! After you've followed these steps your first time, you will only need to run `vue-easy-deploy` or `ved` before pushing your changes on subsequent deploys in order to update your website.
+That's it! After you've followed these steps your first time, you will only need to run `vue-easy-deploy` or `ved` before pushing your changes on subsequent deployments in order to update your website.
 
 #### Background:
 
