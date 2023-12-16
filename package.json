@@ -1,6 +1,6 @@
 {
   "name": "vue-easy-deploy",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Easily deploy static Vue projects",
   "main": "index.js",
   "scripts": {
