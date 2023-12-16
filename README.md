@@ -1,6 +1,9 @@
 # vue-easy-deploy
+
+[![npm](https://img.shields.io/npm/v/vue-easy-deploy.svg)](https://www.npmjs.com/package/vue-easy-deploy)
+[![npm](https://img.shields.io/npm/dt/vue-easy-deploy.svg)](https://www.npmjs.com/package/vue-easy-deploy)
+
 ### The easiest way to deploy Vue CLI applications to GitHub Pages.
-NPM package: [npmjs.com/package/vue-easy-deploy](https://www.npmjs.com/package/vue-easy-deploy)
 
 #### First time users:
 1.  `npm i -g vue-easy-deploy`<br /><br />
